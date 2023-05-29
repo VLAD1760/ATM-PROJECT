@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 45vw;
+    text-align: center;
+    background-image: url("https://i.pinimg.com/564x/d5/ae/82/d5ae825527e53511924514a87c649999.jpg");
+    background-size: cover;
+    color: red;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Old English Text MT", "Blackletter", fantasy;
+    color: aliceblue;
+}
+
+#login-container,
+#operations-container {
+    text-align: center;
+    align-items: center;
+    width: 20vw;
+    height: 30VW;
+    background-color: rgba(0, 0, 0, 0.897);
+    width: fit-content;
+}
+
+#operations-container button {
+    margin: 2px;
+}
+
+#login-container select,
+#login-container input {
+    margin-bottom: 10px;
+}
+
+#output {
+    margin: 20px auto;
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-family: monospace;
+}

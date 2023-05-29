@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <title>ATM Simulation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Bank Of Odin</h1>
+
+    <div id="login-container">
+        <label for="account">Select Account:</label>
+        <select id="account">
+            <option value="Vlad">Account 1</option>
+            <option value="Odin">Account 2</option>
+            <option value="Mintzi">Account 3</option>
+        </select>
+
+        <br>
+
+        <label for="password">Enter Password:</label>
+        <input type="password" id="password">
+
+        <br>
+
+        <button onclick="authenticate()">Login</button>
+    </div>
+
+    <div id="operations-container" style="display: none;">
+        <h2>Account Operations</h2>
+        <button onclick="checkBalance()">Check Balance</button>
+        <button onclick="enterAmount()">Enter Amount</button>
+        <button onclick="withdrawAmount()">Withdraw Amount</button>
+    </div>
+    <div id="output"></div>
+
+    <script src="/main.js"></script>
+</body>
+
+</html>
